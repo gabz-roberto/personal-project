@@ -1,0 +1,32 @@
+:root {
+    --primary: #3a56f7;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #283eb9;
+    transition: 250ms;
+}
+
+.btn--primary {
+    background-color: var(--primary);
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
