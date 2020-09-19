@@ -1,5 +1,5 @@
 import React from 'react'
-import './Buttom.css'
+import './Button.css'
 
 // Procurar icones melhores
 const Styles = [
@@ -12,21 +12,21 @@ const Sizes = [
     'btn--large'
 ]
 
-export const Buttom = ({
+export const Button = ({
     children,
     type,
     onClick,
     buttonStyle,
-    butotnSize
+    buttonSize
 }) => {
-    const OkButtomStyle = Styles.includes(buttonStyle) ?
+    const OkButtonStyle = Styles.includes(buttonStyle) ?
     buttonStyle : Styles[0]
 
-    const OkButtomSize = Styles.includes(buttonStyle) ?
-    butotnSize : Sizes[0]
+    const OkButtonSize = Styles.includes(buttonStyle) ?
+    buttonSize : Sizes[0]
 
     return(
-        <button className={`bnt ${OkButtomStyle} ${OkButtomSize}`} onClick={onClick}
+        <button className={`bnt ${OkButtonStyle} ${OkButtonSize}`} onClick={onClick}
         type={type}>
             {children}
         </button>
